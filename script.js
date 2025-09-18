@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
     let slideInterval; // To store the interval ID
 
     const heroContentData = [
-        { heading: "Welcome to Line of Sight Technologies", paragraph: "At Line of Sight Technologies, we are committed to safeguarding your home and business with state-of-the-art CCTV solutions tailored to your specific needs." },
-        { heading: "Professional CCTV Installation and Repair", paragraph: "Expert installations and repairs by certified technicians — trusted hands for total security." },
-        { heading: "24/7 Control Room Monitoring", paragraph: "Advanced surveillance systems that keep your premises secure and under constant watch." },
-        { heading: "Remote Monitoring On-the-Go", paragraph: "Access live camera feeds from your phone, wherever you are — total peace of mind." },
-        { heading: "Networking Solutions", paragraph: "We design and deploy structured networks for IT systems — from small businesses to enterprise environments." },
-        { heading: "Advanced Biometric Doors", paragraph: "Secure your premises with reliable, modern biometric entry systems for maximum peace of mind." },
-        { heading: "Affordable Protection for Every Home", paragraph: "Quality surveillance systems that fit your budget — because peace of mind shouldn’t cost a fortune." },
-        { heading: "Knowledge That Empowers", paragraph: "We provide training and support to ensure you're in full control of your systems." },
+        { heading: "Welcome to Line of Sight Technologies", paragraph: "We provide complete IT and security solutions — from IT support and networking to CCTV, access control, and more." },
+        { heading: "IT Support and Consulting", paragraph: "Let our experts act as your dedicated IT department, keeping your business running smoothly with proactive support." },
+        { heading: "Professional System Administration", paragraph: "Optimize your servers, backups, and IT systems with professional system administration services." },
+        { heading: "Secure Networking Solutions", paragraph: "Stay connected with secure, efficient, and future-proof networking solutions tailored for your business." },
+        { heading: "CCTV Surveillance Solutions", paragraph: "Protect your property with cutting-edge CCTV systems, remote monitoring, and expert installations." },
+        { heading: "Modern Web Development", paragraph: "Secure your premises with reliable, modern biometric entry systems for maximum peace of mind." },
+        { heading: "Biometric and Card Access Control", paragraph: "Secure your workplace with biometric and card-based access control systems." },
+        { heading: "IT Tutoring and Training", paragraph: "We help students understand difficult IT concepts, complete assignments, and projects — while also offering training for IT professionals." },
+        { heading: "Hardware and Software Procurement", paragraph: "Get high-quality IT hardware and licensed software at the best value to power your operations." },
     ];
 
     function showSlide(index) {
