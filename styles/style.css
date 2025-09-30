@@ -1,3 +1,31 @@
+/* style.css (Example for Mobile-First Reset) */
+
+/* General styles apply to all devices (mobile first) */
+body {
+    width: 100%; /* Ensure body takes full width */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Good practice for all elements */
+}
+
+/* Styles specifically for devices 600px wide or less */
+@media (max-width: 600px) {
+    /* Set all content to flow vertically */
+    .container, header, main, footer {
+        flex-direction: column !important;
+        padding: 10px; /* Add some padding to prevent touching edges */
+    }
+
+    /* Prevent large images or elements from overflowing */
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
 /* General Body and Container Styles */
 body {
     margin: 0;

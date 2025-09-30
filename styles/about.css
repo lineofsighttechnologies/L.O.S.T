@@ -264,7 +264,7 @@
   min-height: 550px;
   color: #fff;
   padding-top: 80px;
-
+  height: 850px;;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,7 +273,7 @@
 
 .about-hero-overlay {
   position: relative;
-  top: 90px;
+  top: 250px;
   left: 0;
   width: 100%;
   height: calc(100% - 90px);
@@ -333,7 +333,7 @@
 
 .white-spacer {
   background-color: #ffffff;
-  height: 80px;
+  height: 10px;
 }
 
 

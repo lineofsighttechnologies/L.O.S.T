@@ -2,6 +2,7 @@
 .hero {
   position: relative;
   min-height: 550px;
+  height: 850px;
   padding-top: 80px; /* prevents overlap with the header */
   /*background: url('../images/services-hero.png') no-repeat center center/cover;*/
   background-image: url('../images/products.png');
@@ -64,6 +65,7 @@
   padding: 40px 20px;
   background-color: #fff;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .category-title {
@@ -110,7 +112,7 @@
   width: 150px;
   height: 150px;
   object-fit:contain;
-  border-radius: 50%;
+  border-radius: 0;
   margin-bottom: 15px;
 }
 

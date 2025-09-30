@@ -1,7 +1,7 @@
 /* Hero Section Styles (from index.html) */
 .hero-section {
     position: relative;
-    height: 700px;
+    height: 850px;
     color: #fff;
     padding-top: 100px;
     overflow: hidden;
@@ -10,7 +10,7 @@
 /* Style for the new white spacer */
 .spacer-white {
     width: 100%; /* Ensure it spans the full width */
-    height: 80px; /* Adjust height as needed for your desired space */
+    height: 10px; /* Adjust height as needed for your desired space */
     background-color: #ffffff; /* Set the background color to white */
 }
 
@@ -52,7 +52,7 @@
     /* This value shifts the overlay down from the very top of the viewport. */
     /* 90px is an estimate for your header's height. */
     /* You might need to adjust this value (e.g., 80px, 100px, etc.) to perfectly match your header. */
-    top: 90px; 
+    top: 250px; 
     left: 0;
     width: 100%;
     /* This value ensures the overlay takes up the remaining height after the header. */

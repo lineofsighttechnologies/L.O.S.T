@@ -2,6 +2,7 @@
 .contact-hero {
   position: relative;
   min-height: 550px;
+  height: 850px;
   padding-top: 80px; /* prevents overlap with the header */
   /*background: url('../images/services-hero.png') no-repeat center center/cover;*/
   background-image: url('../images/contactus.png');
