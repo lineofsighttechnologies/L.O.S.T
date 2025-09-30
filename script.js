@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let slideInterval; // To store the interval ID
 
     const heroContentData = [
-        { heading: "Welcome to Line of Sight Technologies", paragraph: "We provide complete IT and security solutions — from IT support and networking to CCTV, access control, and more." },
+        { heading: "Welcome to Line of Sight Technologies", paragraph: "We provide complete IT and security solutions - from IT support and networking to CCTV, access control, and more." },
         { heading: "IT Support and Consulting", paragraph: "Let our experts act as your dedicated IT department, keeping your business running smoothly with proactive support." },
         { heading: "Professional System Administration", paragraph: "Optimize your servers, backups, and IT systems with professional system administration services." },
         { heading: "Secure Networking Solutions", paragraph: "Stay connected with secure, efficient, and future-proof networking solutions tailored for your business." },
         { heading: "CCTV Surveillance Solutions", paragraph: "Protect your property with cutting-edge CCTV systems, remote monitoring, and expert installations." },
-        { heading: "Modern Web Development", paragraph: "Secure your premises with reliable, modern biometric entry systems for maximum peace of mind." },
+        { heading: "Modern Web Development", paragraph: "Craft a powerful online presence with our professional Front-end Web Development services, ensuring a stunning, responsive, and user-friendly experience for your customers." },
         { heading: "Biometric and Card Access Control", paragraph: "Secure your workplace with biometric and card-based access control systems." },
         { heading: "IT Tutoring and Training", paragraph: "We help students understand difficult IT concepts, complete assignments, and projects — while also offering training for IT professionals." },
         { heading: "Hardware and Software Procurement", paragraph: "Get high-quality IT hardware and licensed software at the best value to power your operations." },
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             nextSlide(); // Move to the second slide
             // After the first transition, set the regular interval for subsequent slides
-            slideInterval = setInterval(nextSlide, 7500); // 5 seconds for subsequent slides
+            slideInterval = setInterval(nextSlide, 10000); // 10 seconds for subsequent slides
         }, initialDelay);
     }
 
