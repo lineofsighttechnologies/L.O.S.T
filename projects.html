@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Line Of Sight Technologies</title>
+    <title>Line Of Sight Technologies</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Line Of Sight Technologies offers comprehensive IT solutions including network & system administration, IT support, hardware procurement, web development, and expert CCTV & access control solutions across Zimbabwe.">
+    <meta name="keywords" content="IT services, Network Administration, System Administration, IT Support, Managed IT, CCTV, security systems, access control, Web Development, Zimbabwe, surveillance cameras, Line Of Sight Technologies">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
     <header class="header">
         <div class="container">
+            <!-- Top Contact Bar -->
             <div class="top-bar">
                 <div class="contact-info">
-                    <span><a href="https://wa.me/263771448536" target="_blank"><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> +263 771 448 536</a></span>
+                    <span><a href="tel:+263771448536"><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> +263 771 448 536</a></span>
                     <span>|</span>
-                    <span><a href="https://wa.me/263774172586" target="_blank"><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> +263 774 172 586</a></span>
+                    <span><a href="tel:+263774172586"><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> +263 774 172 586</a></span>
                     <span>|</span>
-                    <span><a href="https://wa.me/263719123866" target="_blank"><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> +263 719 123 866</a></span>
+                    <span><a href="tel:+263719123866"><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> +263 719 123 866</a></span>
                     <span>|</span>
                     <span><a href="mailto:lineofsighttechnologies@outlook.com"><i class="fas fa-envelope"></i> lineofsighttechnologies@outlook.com</a></span>
                 </div>
             </div>
-            <nav class="navbar">
+
+            <!-- Navigation -->
+            <nav class="navbar" aria-label="Main Navigation">
                 <div class="logo">
                     <img src="images/logo.png" alt="Line Of Sight Technologies Logo">
                     <div>
@@ -33,7 +43,7 @@
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active-nav">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="dropdown">
                         <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
@@ -46,6 +56,7 @@
                             <a href="services.html#access-control">Access Control</a>
                             <a href="services.html#ict-tutoring">IT Tutoring</a>
                             <a href="services.html#procurement">Hardware & Software Procurement</a>
+                        </div>
                     </li>
                     <li class="dropdown">
                         <a href="products.html">Product Catalogue &#9662;</a>
@@ -61,76 +72,64 @@
                         </div>
                     </li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html" class="active-nav">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+
     <main>
-<!-- HERO SECTION -->
-<section class="contact-hero">
-  <div class="hero-overlay">
-    <div class="contact-hero-text">
-      <h1>We’d Love to Hear From You</h1>
-      <p>Our team is ready to assist with your security and networking needs. Let’s connect today.</p>
-      <a href="services.html" class="btn">Explore Our Services</a>
-    </div>
-  </div>
-</section>
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Our Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/projects/project1.jpg" alt="Project 1">
+                        <h3>Office Network Setup</h3>
+                        <p>Complete network setup for a mid-sized office including routers, switches, and secure Wi-Fi access points.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projects/project2.jpg" alt="Project 2">
+                        <h3>CCTV Installation</h3>
+                        <p>Installation of a comprehensive CCTV system for a retail store to enhance security and monitor activities.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projects/project3.jpg" alt="Project 3">
+                        <h3>Website Development</h3>
+                        <p>Developed a responsive website for a local business to improve their online presence and customer engagement.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projects/project4.jpg" alt="Project 4">
+                        <h3>Access Control System</h3>
+                        <p>Implemented an access control system for a corporate office to manage employee entry and enhance security.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projects/project5.jpg" alt="Project 5">
+                        <h3>IT Support & Maintenance</h3>
+                        <p>Provided ongoing IT support and maintenance services for a healthcare facility ensuring minimal downtime.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projects/project6.jpg" alt="Project 6">
+                        <h3>Data Backup Solution</h3>
+                        <p>Designed and implemented a robust data backup solution for a financial institution to safeguard critical data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- CONTACT INFO -->
-<section class="contact-info-section">
-  <div class="container">
-    <h2 class="section-title">Contact Information</h2>
-    <h3 class="section-subtitle">We’re always happy to assist you — reach us through the options below.</h3>
-
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-        <h3>Our Office</h3>
-        <p>106 Churchill, Harare, Zimbabwe</p>
-      </div>
-
-      <div class="contact-card">
-        <div class="icon"><i class="fas fa-phone"></i></div>
-        <h3>Call Us</h3>
-        <p><a href="https://wa.me/263771448536" target="_blank">+263 771 448 536</a></p>
-        <p><a href="https://wa.me/263774172586" target="_blank">+263 774 172 586</a></p>
-        <p><a href="https://wa.me/263719123866" target="_blank">+263 719 123 866</a></p>
-      </div>
-
-      <div class="contact-card">
-        <div class="icon"><i class="fas fa-envelope"></i></div>
-        <h3>Email Us</h3>
-        <p><a href="mailto:lineofsighttechnologies@outlook.com">lineofsighttechnologies@outlook.com</a></p>
-      </div>
-
-      <div class="contact-card">
-        <div class="icon"><i class="fas fa-clock"></i></div>
-        <h3>Business Hours</h3>
-        <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
-        <p>Sat: 9:00 AM - 12:00 PM</p>
-        <p>Sun: Closed</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- MAP -->
-<section class="map-section">
-  <div class="container">
-    <h2 class="section-title">Find Us</h2>
-    <h3 class="section-subtitle">Visit our office to discuss your needs in person.</h3>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.9066043972825!2d31.068313974119803!3d-17.79608597541997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a549b56d1a39%3A0x7404c6f58fe4becb!2s106%20Churchill%20Ave%20E%2C%20Harare!5e0!3m2!1sen!2szw!4v1754340746849!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-</section>
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Ready to Secure Your Space?</h2>
+                <p>Let’s help you take control with smart, affordable solutions.</p>
+                <a href="contact.html" class="btn">Request a Consultation</a>
+            </div>
+        </section>
 
     </main>
 
+
+    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-grid">
@@ -143,21 +142,19 @@
                         <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-services">
                     <h3>Our Services</h3>
                     <ul>
-                        <li><a href="services.html#cctv">CCTV</a></li>
+                        <li><a href="services.html#system-administration">CCTV</a></li>
                         <li><a href="services.html#ict-support">IT Support & Consulting</a></li>
                         <li><a href="services.html#system-administration">System Administration</a></li>
                         <li><a href="services.html#network-administration">Network Administration</a></li>
                         <li><a href="services.html#web-development">Web Front-end Development</a></li>
                         <li><a href="services.html#access-control">Access Control</a></li>
                         <li><a href="services.html#ict-tutoring">IT Tutoring</a></li>
-                        <li><a href="services.html#procurement">Hardware & Software Procurement</a></li>
+                        <li><a href="services.html#procurement">Hardware & Software Procurement</a></li>    
                     </ul>
                 </div>
-
                 <div class="footer-products">
                     <h3>Products</h3>
                     <ul>
@@ -171,7 +168,6 @@
                         <li><a href="products.html#installation-supplies">Installation & Connectivity Supplies</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-contact-info">
                     <h3>Contact Info</h3>
                     <p><i class="fas fa-map-marker-alt"></i> 106 Churchill, Harare, Zimbabwe</p>
@@ -184,9 +180,8 @@
                     <p class="indent-text">Sun: Closed</p>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>Copyright &copy; 2025 Line Of Sight Technologies. All Rights Reserved. | Site created by Munashe Zimondi +263771448536</p>
+                <p>© 2025 Line Of Sight Technologies. All Rights Reserved. | Site created by Munashe Zimondi +263771448536</p>
             </div>
         </div>
     </footer>
@@ -195,6 +190,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

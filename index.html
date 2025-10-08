@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Line Of Sight Technologies</title>
@@ -43,11 +42,19 @@
                         <p class="logo-tagline">Your eyes in your absence</p>
                     </div>
                 </div>
-                <ul class="nav-links">
+                
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="active-nav">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="dropdown">
-                        <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+                        <a href="services.html" class="dropdown-toggle">Services <i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-content">
                             <a href="services.html#cctv">CCTV</a>
                             <a href="services.html#ict-support">IT Support & Consulting</a>
@@ -60,7 +67,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="products.html">Product Catalogue &#9662;</a>
+                        <a href="products.html" class="dropdown-toggle">Product Catalogue <i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-content">
                             <a href="products.html#cctv">CCTV & Video Surveillance</a>
                             <a href="products.html#end-user-hardware">End-User Hardware & Components</a>
@@ -72,6 +79,7 @@
                             <a href="products.html#installation-supplies">Installation & Connectivity Supplies</a>
                         </div>
                     </li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -197,7 +205,7 @@
                         <div class="why-us-item"><div class="icon-container"><i class="fas fa-laptop-code"></i></div><h3>Comprehensive ICT Expertise</h3><p>We provide a full range of IT solutions including support, system administration, networking, and web development to keep your business running smoothly.</p></div>
                         <div class="why-us-item"><div class="icon-container"><i class="fas fa-shield-alt"></i></div><h3>Secure & Reliable Solutions</h3><p>From CCTV and biometric access control to secure IT infrastructures, we deliver technology that protects and empowers your operations.</p></div>
                         <div class="why-us-item"><div class="icon-container"><i class="fas fa-user-tie"></i></div><h3>Experienced Professionals</h3><p>Our team combines years of expertise in ICT and security to deliver solutions that are practical, reliable, and future-proof.</p></div>
-                        <div class="why-us-item"><div class="icon-container"><i class="fas fa-cogs"></i></div><h3>Tailored to Your Needs</h3><p>We don’t believe in one-size-fits-all. Every ICT and security solution we provide is customized to meet your unique business requirements.</p></div>
+                        <div class="why-us-item"><div class="icon-container"><i class="fas fa-cogs"></i></div><h3>Tailored to Your Needs</h3><p>We don't believe in one-size-fits-all. Every ICT and security solution we provide is customized to meet your unique business requirements.</p></div>
                         <div class="why-us-item"><div class="icon-container"><i class="fas fa-headset"></i></div><h3>Proactive Support</h3><p>We deliver responsive, ongoing support with a proactive approach that prevents downtime and ensures business continuity.</p></div>
                         <div class="why-us-item"><div class="icon-container"><i class="fas fa-dollar-sign"></i></div><h3>Affordable & Scalable Solutions</h3><p>We offer cost-effective services and solutions designed to grow with your business — giving you maximum value without compromising on quality.</p></div>
                     </div>
@@ -206,7 +214,7 @@
         <section class="cta-banner">
             <div class="container">
                 <h2>Ready to Secure Your Space?</h2>
-                <p>Let’s help you take control with smart, affordable solutions.</p>
+                <p>Let's help you take control with smart, affordable solutions.</p>
                 <a href="contact.html" class="btn">Request a Consultation</a>
             </div>
         </section>
@@ -222,6 +230,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">

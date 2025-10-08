@@ -55,9 +55,17 @@
   color: #1a2a46;
 }
 
-.section-tagline {
-  font-size: 1.1rem;
-  color: #666;
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 100px; /* Refined length */
+    height: 7px; /* Thicker, more substantial line */
+    background: linear-gradient(to right, #007bff, #0056b3, #007bff); /* Gradient for a dynamic look */
+    margin: 10px auto 0; /* More space below heading */
+    border-radius: 4px;
+    opacity: 0.95;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Subtle blue glow around the line */
 }
 
 /* Product Category Section */
@@ -66,6 +74,19 @@
   background-color: #fff;
   margin-bottom: 30px;
   text-align: center;
+}
+
+
+.category-title::after {
+    content: '';
+    display: block;
+    width: 100px; /* Refined length */
+    height: 7px; /* Thicker, more substantial line */
+    background: linear-gradient(to right, #007bff, #0056b3, #007bff); /* Gradient for a dynamic look */
+    margin: 10px auto 0; /* More space below heading */
+    border-radius: 4px;
+    opacity: 0.95;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Subtle blue glow around the line */
 }
 
 .category-title {
