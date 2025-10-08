@@ -63,7 +63,7 @@ body {
 }
 
 .contact-info a:hover {
-    color: goldenrod;
+    color: #bcd5ff;
     transform: translateX(5px);
 }
 
@@ -169,15 +169,15 @@ body {
 }
 
 .nav-links a:hover {
-    color: goldenrod;
+    color: #bcd5ff;
     text-decoration: underline;
-    text-decoration-color: goldenrod;
+    text-decoration-color: #bcd5ff;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
 }
 
 .nav-links a.active-nav {
-    color: #fff;
+    color: #bcd5ff;
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-underline-offset: 4px;
