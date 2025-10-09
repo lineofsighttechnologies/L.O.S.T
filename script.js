@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
             heading: "Welcome to Line of Sight Technologies",
             paragraph: "Your trusted partner for comprehensive IT solutions and security systems in Zimbabwe."
         },
+                {
+            heading: "Advanced CCTV Surveillance",
+            paragraph: "State-of-the-art security camera systems with remote monitoring and maintenance."
+        },
         {
             heading: "Expert IT Support & Consulting",
             paragraph: "Professional ICT management and strategic consulting to keep your business running smoothly."
@@ -25,10 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             heading: "Secure Network Solutions",
             paragraph: "Robust network design, deployment, and management for seamless connectivity."
         },
-        {
-            heading: "Advanced CCTV Surveillance",
-            paragraph: "State-of-the-art security camera systems with remote monitoring and maintenance."
-        },
+
         {
             heading: "Modern Web Development",
             paragraph: "Stunning, responsive websites built with the latest technologies to elevate your online presence."

@@ -671,17 +671,9 @@
     }
     
     .hero-content-overlay {
-        top: 0;
-        height: 100%;
+        top: 120px;
+        height: calc(100% - 80px);
         padding: 0 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        left: 0;
-        right: 0;
-        box-sizing: border-box;
-
     }
     
     .hero-content {
