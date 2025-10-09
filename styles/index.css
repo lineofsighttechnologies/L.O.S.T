@@ -79,7 +79,9 @@
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: #1144dcac;
     color: #fff;
     padding: 15px 30px;
@@ -198,7 +200,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: background-color 0.5s ease, transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease, letter-spacing 0.4s ease;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     border: none;
@@ -348,7 +352,9 @@
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
@@ -667,22 +673,28 @@
     .hero-content-overlay {
         top: 120px;
         height: calc(100% - 80px);
+        padding: 0 15px;
     }
     
     .hero-content {
         padding: 30px 20px;
-        max-width: 90%;
+        max-width: 100%;
+        width: 100%;
         border-radius: 10px;
+        margin: 0 auto;
+        text-align: center;
     }
     
     .hero-content h2 {
         font-size: 2em;
         margin-bottom: 15px;
+        text-align: center;
     }
     
     .hero-content p {
         font-size: 1em;
         margin-bottom: 25px;
+        text-align: center;
     }
     
     .btn {
@@ -691,7 +703,7 @@
     }
     
     .spacer-white {
-        height: 50px;
+        height: 3px;
     }
 
     /* About Us Section */
@@ -821,6 +833,7 @@
     
     .hero-content-overlay {
         top: 80px;
+        padding: 0 10px;
     }
     
     .hero-content {
@@ -840,6 +853,10 @@
     .btn {
         padding: 10px 20px;
         font-size: 0.9em;
+    }
+    
+    .spacer-white {
+        height: 2px;
     }
 
     /* About Us Section */
@@ -963,6 +980,10 @@
     .hero-content p {
         font-size: 0.85em;
     }
+    
+    .spacer-white {
+        height: 2px;
+    }
 
     /* About Us Section */
     .about-us-section .section-heading {
@@ -1018,25 +1039,34 @@
     
     .hero-content-overlay {
         top: 60px;
+        padding: 0 8px;
     }
     
     .hero-content {
         padding: 20px 12px;
+        width: 100%;
+        text-align: center;
     }
     
     .hero-content h2 {
         font-size: 1.2em;
         margin-bottom: 10px;
+        text-align: center;
     }
     
     .hero-content p {
         font-size: 0.8em;
         margin-bottom: 15px;
+        text-align: center;
     }
     
     .btn {
         padding: 8px 16px;
         font-size: 0.8em;
+    }
+    
+    .spacer-white {
+        height: 1px;
     }
 
     /* About Us Section */
@@ -1178,20 +1208,25 @@
     
     .hero-content-overlay {
         top: 100px;
+        padding: 0 15px;
     }
     
     .hero-content {
         padding: 20px 15px;
+        width: 100%;
+        text-align: center;
     }
     
     .hero-content h2 {
         font-size: 1.5em;
         margin-bottom: 10px;
+        text-align: center;
     }
     
     .hero-content p {
         font-size: 0.9em;
         margin-bottom: 15px;
+        text-align: center;
     }
 }
 
@@ -1223,12 +1258,27 @@
         font-size: 14px;
     }
     
+    .hero-content-overlay {
+        padding: 0 5px;
+    }
+    
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+    
     .hero-content h2 {
         font-size: 1.1em;
+        text-align: center;
     }
     
     .hero-content p {
         font-size: 0.75em;
+        text-align: center;
+    }
+    
+    .spacer-white {
+        height: 1px;
     }
     
     .about-us-section .section-heading,
