@@ -671,15 +671,12 @@
     }
     
     .hero-content-overlay {
-        top: 120px;
-        height: calc(100% - 80px);
+        top: 0;
+        height: 100%;
         padding: 0 15px;
-
-        justify-content: center;
+        display: flex;
         align-items: center;
-        text-align: center;
-        align-content: center;
-
+        justify-content: center;
     }
     
     .hero-content {
@@ -689,10 +686,6 @@
         border-radius: 10px;
         margin: 0 auto;
         text-align: center;
-
-        justify-content: center;
-        align-items: center;
-        align-content: center;
     }
     
     .hero-content h2 {
