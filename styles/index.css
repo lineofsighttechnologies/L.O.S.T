@@ -41,21 +41,23 @@
 
 /* Hero Section Overlay for Text Content */
 .hero-content-overlay {
-    position: relative;
-    top: 250px;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 90px);
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: top;
+    justify-content: center;
     text-align: center;
     flex-direction: column;
     z-index: 2;
+    padding: 0 20px;
 }
 
 .hero-content {
     max-width: 900px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
@@ -508,13 +510,12 @@
     }
     
     .hero-content-overlay {
-        top: 180px;
+        padding: 0 30px;
     }
     
     .hero-content {
-        padding: 35px 20px;
+        padding: 35px 25px;
         max-width: 600px;
-        margin: 0 auto;
     }
     
     .hero-content h2 {
@@ -666,35 +667,30 @@
 @media (max-width: 768px) {
     /* Hero Section */
     .hero-section {
-        height: 600px;
+        height: 100vh;
+        min-height: 600px;
         padding-top: 80px;
     }
     
     .hero-content-overlay {
-        top: 120px;
-        height: calc(100% - 80px);
-        padding: 0 15px;
+        padding: 0 20px;
     }
     
     .hero-content {
         padding: 30px 20px;
         max-width: 100%;
-        width: 90%;
+        width: 100%;
         border-radius: 10px;
-        margin: 0 auto;
-        text-align: center;
     }
     
     .hero-content h2 {
         font-size: 2em;
         margin-bottom: 15px;
-        text-align: center;
     }
     
     .hero-content p {
         font-size: 1em;
         margin-bottom: 25px;
-        text-align: center;
     }
     
     .btn {
@@ -827,13 +823,13 @@
 @media (max-width: 576px) {
     /* Hero Section */
     .hero-section {
-        height: 500px;
+        height: 100vh;
+        min-height: 500px;
         padding-top: 70px;
     }
     
     .hero-content-overlay {
-        top: 80px;
-        padding: 0 10px;
+        padding: 0 15px;
     }
     
     .hero-content {
@@ -970,7 +966,7 @@
 @media (max-width: 480px) {
     /* Hero Section */
     .hero-section {
-        height: 450px;
+        min-height: 450px;
     }
     
     .hero-content h2 {
@@ -1033,31 +1029,27 @@
 @media (max-width: 375px) {
     /* Hero Section */
     .hero-section {
-        height: 400px;
+        min-height: 400px;
         padding-top: 60px;
     }
     
     .hero-content-overlay {
-        top: 60px;
-        padding: 0 8px;
+        padding: 0 10px;
     }
     
     .hero-content {
         padding: 20px 12px;
         width: 100%;
-        text-align: center;
     }
     
     .hero-content h2 {
         font-size: 1.2em;
         margin-bottom: 10px;
-        text-align: center;
     }
     
     .hero-content p {
         font-size: 0.8em;
         margin-bottom: 15px;
-        text-align: center;
     }
     
     .btn {
@@ -1206,27 +1198,14 @@
         min-height: 400px;
     }
     
-    .hero-content-overlay {
-        top: 100px;
-        padding: 0 15px;
-    }
-    
-    .hero-content {
-        padding: 20px 15px;
-        width: 100%;
-        text-align: center;
-    }
-    
     .hero-content h2 {
         font-size: 1.5em;
         margin-bottom: 10px;
-        text-align: center;
     }
     
     .hero-content p {
         font-size: 0.9em;
         margin-bottom: 15px;
-        text-align: center;
     }
 }
 
@@ -1258,23 +1237,12 @@
         font-size: 14px;
     }
     
-    .hero-content-overlay {
-        padding: 0 5px;
-    }
-    
-    .hero-content {
-        width: 100%;
-        text-align: center;
-    }
-    
     .hero-content h2 {
         font-size: 1.1em;
-        text-align: center;
     }
     
     .hero-content p {
         font-size: 0.75em;
-        text-align: center;
     }
     
     .spacer-white {
