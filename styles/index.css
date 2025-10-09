@@ -35,6 +35,14 @@
     transition: opacity 1.5s ease-in-out;
 }
 
+/* Show full image on portrait mobile devices */
+@media (max-width: 768px) and (orientation: portrait) {
+    .slideshow-container img.slide {
+        object-fit: contain;
+        background-color: #1a2a46;
+    }
+}
+
 .slideshow-container img.slide.active {
     opacity: 1;
 }
