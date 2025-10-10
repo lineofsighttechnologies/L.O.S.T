@@ -1,40 +1,4 @@
 // ============================================
-// SCROLL PROGRESS INDICATOR
-// ============================================
-document.addEventListener('DOMContentLoaded', function() {
-    const progressBar = document.getElementById('scrollProgress');
-    
-    if (progressBar) {
-        window.addEventListener('scroll', function() {
-            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (window.pageYOffset / windowHeight) * 100;
-            progressBar.style.width = scrolled + '%';
-        });
-    }
-});
-
-// ============================================
-// PARALLAX SCROLLING EFFECT
-// ============================================
-document.addEventListener('DOMContentLoaded', function() {
-    const parallaxElements = document.querySelectorAll('.about-us-section, .why-us-section');
-    
-    if (parallaxElements.length > 0) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            
-            parallaxElements.forEach(function(element) {
-                // Only apply parallax on desktop (not on mobile)
-                if (window.innerWidth > 768) {
-                    const speed = 0.5;
-                    element.style.backgroundPositionY = (scrolled * speed) + 'px';
-                }
-            });
-        });
-    }
-});
-
-// ============================================
 // HERO SECTION SLIDESHOW
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
@@ -49,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             heading: "Welcome to Line of Sight Technologies",
             paragraph: "Your trusted partner for comprehensive IT solutions and security systems in Zimbabwe."
         },
-        {
+                {
             heading: "Advanced CCTV Surveillance",
             paragraph: "State-of-the-art security camera systems with remote monitoring and maintenance."
         },
@@ -65,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             heading: "Secure Network Solutions",
             paragraph: "Robust network design, deployment, and management for seamless connectivity."
         },
+
         {
             heading: "Modern Web Development",
             paragraph: "Stunning, responsive websites built with the latest technologies to elevate your online presence."
@@ -223,3 +188,94 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================
 // BACK TO TOP BUTTON
 // ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    if (backToTopBtn) {
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top when button is clicked
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
+// ============================================
+// SMOOTH SCROLL FOR ANCHOR LINKS
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            // Skip if it's just "#" or if it's for a modal/tab
+            if (href === '#' || href.length <= 1) return;
+            
+            const targetId = href.substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                e.preventDefault();
+                const headerOffset = 100; // Adjust based on your fixed header height
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+// ============================================
+// INTERSECTION OBSERVER FOR ANIMATIONS
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    // Observe service cards for fade-in animation
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe service cards
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+
+    // Observe why-us items
+    const whyUsItems = document.querySelectorAll('.why-us-item');
+    whyUsItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(item);
+    });
+});
