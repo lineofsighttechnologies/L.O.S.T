@@ -671,8 +671,7 @@
 @media (max-width: 768px) {
     /* Hero Section */
     .hero-section {
-        /*height: 100vh;*/
-        height: 600px;
+        height: 100vh;
         min-height: 500px;
         padding-top: 80px;
     }
