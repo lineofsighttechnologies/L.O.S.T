@@ -4,9 +4,10 @@
   min-height: 550px;
   height: 850px;
   padding-top: 80px; /* prevents overlap with the header */
-  /*background: url('../images/services-hero.png') no-repeat center center/cover;*/
   background-image: url('../images/products.png');
-  background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +20,7 @@
   padding: 50px;
   border-radius: 12px;
   max-width: 900px;
+  margin: 0 20px;
 }
 
 .hero-title {
@@ -55,17 +57,26 @@
   color: #1a2a46;
 }
 
+.section-tagline {
+  font-size: 1.15em;
+  margin-bottom: 30px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  color: #666;
+}
 
 .section-heading::after {
-    content: '';
-    display: block;
-    width: 100px; /* Refined length */
-    height: 7px; /* Thicker, more substantial line */
-    background: linear-gradient(to right, #007bff, #0056b3, #007bff); /* Gradient for a dynamic look */
-    margin: 10px auto 0; /* More space below heading */
-    border-radius: 4px;
-    opacity: 0.95;
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Subtle blue glow around the line */
+  content: '';
+  display: block;
+  width: 100px;
+  height: 7px;
+  background: linear-gradient(to right, #007bff, #0056b3, #007bff);
+  margin: 10px auto 0;
+  border-radius: 4px;
+  opacity: 0.95;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
 }
 
 /* Product Category Section */
@@ -76,19 +87,6 @@
   text-align: center;
 }
 
-
-.category-title::after {
-    content: '';
-    display: block;
-    width: 100px; /* Refined length */
-    height: 7px; /* Thicker, more substantial line */
-    background: linear-gradient(to right, #007bff, #0056b3, #007bff); /* Gradient for a dynamic look */
-    margin: 10px auto 0; /* More space below heading */
-    border-radius: 4px;
-    opacity: 0.95;
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Subtle blue glow around the line */
-}
-
 .category-title {
   font-size: 2rem;
   color: #1a2a46;
@@ -97,12 +95,24 @@
   padding-bottom: 10px;
 }
 
+.category-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 7px;
+  background: linear-gradient(to right, #007bff, #0056b3, #007bff);
+  margin: 10px auto 0;
+  border-radius: 4px;
+  opacity: 0.95;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+}
+
 /* Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  justify-content: center; /* This will center the items in the grid */
+  justify-content: center;
   justify-items: center;
 }
 
@@ -115,8 +125,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   display: flex;
-  flex-direction:column;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: 1px solid #eee;
   width: 300px;
@@ -126,13 +136,13 @@
 
 .product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
   width: 150px;
   height: 150px;
-  object-fit:contain;
+  object-fit: contain;
   border-radius: 0;
   margin-bottom: 15px;
 }
@@ -184,10 +194,654 @@
   padding: 14px 30px;
   border-radius: 30px;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
+  display: inline-block;
 }
 
 .cta-banner .btn:hover {
   background-color: #003d80;
+  transform: translateY(-3px);
+}
+
+/* ============================================
+   MOBILE RESPONSIVE OPTIMIZATIONS
+   ============================================ */
+
+/* Tablet (992px and below) */
+@media (max-width: 992px) {
+  /* Hero Section */
+  .hero {
+    height: 700px;
+    padding-top: 80px;
+  }
+
+  .hero .hero-overlay {
+    padding: 40px 30px;
+    max-width: 700px;
+    margin: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    padding: 8px 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    padding: 8px 15px;
+  }
+
+  /* Product Intro */
+  .product-intro {
+    padding: 40px 20px;
+  }
+
+  .section-heading {
+    font-size: 2.2rem;
+  }
+
+  .section-tagline {
+    font-size: 1.05em;
+    padding: 0 15px;
+  }
+
+  /* Product Category */
+  .product-category {
+    padding: 35px 20px;
+    margin-bottom: 25px;
+  }
+
+  .category-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .category-title::after {
+    width: 80px;
+    height: 6px;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  /* Product Card */
+  .product-card {
+    width: 280px;
+    padding: 40px 20px;
+  }
+
+  .product-card img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .product-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    padding: 50px 20px;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-banner p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-banner .btn {
+    padding: 12px 28px;
+  }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero {
+    height: 600px;
+    min-height: 500px;
+    padding-top: 70px;
+    background-attachment: scroll;
+  }
+
+  .hero .hero-overlay {
+    padding: 35px 25px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    padding: 6px 12px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 6px 12px;
+    margin-top: 8px;
+  }
+
+  /* Product Intro */
+  .product-intro {
+    padding: 35px 15px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .section-heading::after {
+    width: 70px;
+    height: 5px;
+    margin: 8px auto 0;
+  }
+
+  .section-tagline {
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-bottom: 25px;
+  }
+
+  /* Product Category */
+  .product-category {
+    padding: 30px 15px;
+    margin-bottom: 20px;
+  }
+
+  .category-title {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+  }
+
+  .category-title::after {
+    width: 70px;
+    height: 5px;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  /* Product Card */
+  .product-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 20px;
+    margin: 0 auto;
+  }
+
+  .product-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .product-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .product-card p {
+    font-size: 0.88rem;
+  }
+
+  .product-card .note {
+    font-size: 0.8rem;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    padding: 45px 20px;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+
+  .cta-banner p {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+    padding: 0 10px;
+  }
+
+  .cta-banner .btn {
+    padding: 11px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Mobile (576px and below) */
+@media (max-width: 576px) {
+  /* Hero Section */
+  .hero {
+    height: 500px;
+    min-height: 450px;
+    padding-top: 60px;
+  }
+
+  .hero .hero-overlay {
+    padding: 30px 20px;
+    max-width: 95%;
+    border-radius: 10px;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+    padding: 5px 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+
+  /* Product Intro */
+  .product-intro {
+    padding: 30px 12px;
+  }
+
+  .section-heading {
+    font-size: 1.7rem;
+  }
+
+  .section-heading::after {
+    width: 60px;
+    height: 4px;
+  }
+
+  .section-tagline {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  /* Product Category */
+  .product-category {
+    padding: 25px 12px;
+    margin-bottom: 18px;
+  }
+
+  .category-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    padding-bottom: 6px;
+  }
+
+  .category-title::after {
+    width: 60px;
+    height: 4px;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    gap: 18px;
+    padding: 0 5px;
+  }
+
+  /* Product Card */
+  .product-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 30px 18px;
+  }
+
+  .product-card img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .product-card h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .product-card .price {
+    font-size: 1rem;
+  }
+
+  .product-card p {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+
+  .product-card .note {
+    font-size: 0.75rem;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    padding: 40px 15px;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .cta-banner p {
+    font-size: 0.88rem;
+    margin-bottom: 15px;
+  }
+
+  .cta-banner .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  /* Hero Section */
+  .hero {
+    height: 450px;
+    min-height: 400px;
+    padding-top: 60px;
+  }
+
+  .hero .hero-overlay {
+    padding: 25px 15px;
+    max-width: 95%;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  /* Product Intro */
+  .product-intro {
+    padding: 25px 10px;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-heading::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  .section-tagline {
+    font-size: 0.85rem;
+  }
+
+  /* Product Category */
+  .product-category {
+    padding: 20px 10px;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .category-title::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  /* Product Card */
+  .product-card {
+    padding: 25px 15px;
+  }
+
+  .product-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .product-card p {
+    font-size: 0.8rem;
+  }
+
+  .product-card .note {
+    font-size: 0.7rem;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    padding: 35px 12px;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.3rem;
+  }
+
+  .cta-banner p {
+    font-size: 0.82rem;
+  }
+
+  .cta-banner .btn {
+    padding: 9px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Extra Small Mobile (375px and below) */
+@media (max-width: 375px) {
+  /* Hero Section */
+  .hero {
+    height: 400px;
+    min-height: 350px;
+    padding-top: 55px;
+  }
+
+  .hero .hero-overlay {
+    padding: 20px 12px;
+    max-width: 95%;
+  }
+
+  .hero-title {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+    padding: 4px 8px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  /* Product Intro */
+  .product-intro {
+    padding: 20px 8px;
+  }
+
+  .section-heading {
+    font-size: 1.3rem;
+  }
+
+  .section-heading::after {
+    width: 45px;
+    height: 3px;
+    margin: 6px auto 0;
+  }
+
+  .section-tagline {
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+
+  /* Product Category */
+  .product-category {
+    padding: 18px 8px;
+    margin-bottom: 15px;
+  }
+
+  .category-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .category-title::after {
+    width: 45px;
+    height: 3px;
+    margin: 6px auto 0;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    gap: 15px;
+  }
+
+  /* Product Card */
+  .product-card {
+    padding: 22px 12px;
+    max-width: 320px;
+  }
+
+  .product-card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 12px;
+  }
+
+  .product-card h4 {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
+
+  .product-card .price {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+
+  .product-card p {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+  }
+
+  .product-card .note {
+    font-size: 0.65rem;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    padding: 30px 10px;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .cta-banner p {
+    font-size: 0.78rem;
+    margin-bottom: 12px;
+  }
+
+  .cta-banner .btn {
+    padding: 8px 18px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Landscape orientation fixes for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+    min-height: 350px;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch targets for better mobile UX */
+  .cta-banner .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects on touch devices */
+  .product-card {
+    transition: none;
+  }
+
+  .product-card:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Prevent text from being too small on any device */
+@media (max-width: 320px) {
+  .hero {
+    height: 350px;
+    min-height: 300px;
+  }
+
+  .hero .hero-overlay {
+    padding: 18px 10px;
+  }
+
+  .hero-title {
+    font-size: 1.1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+  }
+
+  .category-title {
+    font-size: 1.1rem;
+  }
+
+  .product-card {
+    padding: 20px 10px;
+  }
+
+  .product-card h4 {
+    font-size: 0.85rem;
+  }
+
+  .product-card p {
+    font-size: 0.7rem;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.1rem;
+  }
+
+  .cta-banner p {
+    font-size: 0.75rem;
+  }
 }
