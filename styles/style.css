@@ -13,6 +13,22 @@ body {
     padding: 0 20px;
 }
 
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /* Header Styles */
 .header {
     background-color: rgba(0, 0, 0, 0.5);
@@ -244,43 +260,6 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* Banner */
-.cta-banner {
-    background-color: #5283de1f;
-    color: #fff;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.cta-banner h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.cta-banner p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.cta-banner .btn {
-    background-color: #fff;
-    color: #002a56;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cta-banner .btn:hover {
-    background-color: #154edf;
-    color: #fff;
-    transform: translateY(-3px);
 }
 
 /* Footer Styles */
@@ -716,18 +695,6 @@ body {
     .dropdown-content a {
         padding: 12px 20px 12px 40px;
         font-size: 0.9em;
-    }
-    
-    .cta-banner {
-        padding: 40px 15px;
-    }
-    
-    .cta-banner h2 {
-        font-size: 1.8em;
-    }
-    
-    .cta-banner p {
-        font-size: 1em;
     }
     
     .main-footer {
