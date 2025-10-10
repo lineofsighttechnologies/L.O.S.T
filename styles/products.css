@@ -306,13 +306,24 @@
   }
 }
 
-/* Mobile (768px and below) */
+/* Mobile (768px and below) - FIXED HEADER */
 @media (max-width: 768px) {
+  /* Make header fixed on mobile for products page */
+  body .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(26, 42, 70, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
   /* Hero Section */
   .hero {
     height: 600px;
     min-height: 500px;
-    padding-top: 70px;
+    padding-top: 150px;
     background-attachment: scroll;
   }
 
@@ -432,7 +443,7 @@
   .hero {
     height: 500px;
     min-height: 450px;
-    padding-top: 60px;
+    padding-top: 140px;
   }
 
   .hero .hero-overlay {
@@ -551,7 +562,7 @@
   .hero {
     height: 450px;
     min-height: 400px;
-    padding-top: 60px;
+    padding-top: 130px;
   }
 
   .hero .hero-overlay {
@@ -647,7 +658,7 @@
   .hero {
     height: 400px;
     min-height: 350px;
-    padding-top: 55px;
+    padding-top: 120px;
   }
 
   .hero .hero-overlay {
@@ -767,6 +778,7 @@
   .hero {
     height: 100vh;
     min-height: 350px;
+    padding-top: 120px;
   }
 
   .hero-title {
@@ -803,6 +815,7 @@
   .hero {
     height: 350px;
     min-height: 300px;
+    padding-top: 110px;
   }
 
   .hero .hero-overlay {
