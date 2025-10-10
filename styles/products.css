@@ -107,16 +107,19 @@
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
 }
 
-/* Product Grid */
+/* Product Grid - FIXED CENTERING */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   justify-content: center;
   justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Product Card */
+/* Product Card - FIXED CENTERING */
 .product-card {
   background-color: #ffffffe3;
   border-radius: 12px;
@@ -129,9 +132,8 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #eee;
-  width: 300px;
-  align-content: center;
-  justify-self: center;
+  width: 100%;
+  max-width: 300px;
 }
 
 .product-card:hover {
@@ -170,7 +172,7 @@
   color: #888;
 }
 
-/* Call-To-Action Banner */
+/* Call-To-Action Banner - FIXED BUTTON TEXT ALIGNMENT */
 .cta-banner {
   background-color: #1a2a46;
   color: #fff;
@@ -196,7 +198,10 @@
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
 }
 
 .cta-banner .btn:hover {
@@ -266,11 +271,12 @@
   .product-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+    padding: 0 15px;
   }
 
   /* Product Card */
   .product-card {
-    width: 280px;
+    max-width: 280px;
     padding: 40px 20px;
   }
 
@@ -306,7 +312,7 @@
   }
 }
 
-/* Mobile (768px and below) - FIXED HEADER */
+/* Mobile (768px and below) - FIXED HEADER AND CENTERING */
 @media (max-width: 768px) {
   /* Make header fixed on mobile for products page */
   body .header {
@@ -383,18 +389,20 @@
     height: 5px;
   }
 
-  /* Product Grid */
+  /* Product Grid - MOBILE CENTERING */
   .product-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 0 10px;
+    padding: 0 15px;
+    max-width: 100%;
   }
 
-  /* Product Card */
+  /* Product Card - MOBILE CENTERING */
   .product-card {
-
+    width: 100%;
+    max-width: 100%;
     padding: 35px 20px;
- 
+    margin: 0 auto;
   }
 
   .product-card img {
@@ -436,7 +444,7 @@
   }
 }
 
-/* Small Mobile (576px and below) */
+/* Small Mobile (576px and below) - CENTERING */
 @media (max-width: 576px) {
   /* Hero Section */
   .hero {
@@ -498,16 +506,16 @@
     height: 4px;
   }
 
-  /* Product Grid */
+  /* Product Grid - SMALL MOBILE CENTERING */
   .product-grid {
     gap: 18px;
-    padding: 0 5px;
+    padding: 0 15px;
   }
 
-  /* Product Card */
+  /* Product Card - SMALL MOBILE CENTERING */
   .product-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 100%;
     padding: 30px 18px;
   }
 
@@ -555,7 +563,7 @@
   }
 }
 
-/* Extra Small Mobile (480px and below) */
+/* Extra Small Mobile (480px and below) - CENTERING */
 @media (max-width: 480px) {
   /* Hero Section */
   .hero {
@@ -610,9 +618,16 @@
     height: 3px;
   }
 
-  /* Product Card */
+  /* Product Grid - EXTRA SMALL MOBILE CENTERING */
+  .product-grid {
+    padding: 0 10px;
+  }
+
+  /* Product Card - EXTRA SMALL MOBILE CENTERING */
   .product-card {
     padding: 25px 15px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .product-card img {
@@ -651,7 +666,7 @@
   }
 }
 
-/* Extra Extra Small Mobile (375px and below) */
+/* Extra Extra Small Mobile (375px and below) - CENTERING */
 @media (max-width: 375px) {
   /* Hero Section */
   .hero {
@@ -715,15 +730,17 @@
     margin: 6px auto 0;
   }
 
-  /* Product Grid */
+  /* Product Grid - XXS MOBILE CENTERING */
   .product-grid {
     gap: 15px;
+    padding: 0 10px;
   }
 
-  /* Product Card */
+  /* Product Card - XXS MOBILE CENTERING */
   .product-card {
     padding: 22px 12px;
-    max-width: 320px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .product-card img {
@@ -837,8 +854,16 @@
     font-size: 1.1rem;
   }
 
+  /* Product Grid - 320px CENTERING */
+  .product-grid {
+    padding: 0 8px;
+  }
+
+  /* Product Card - 320px CENTERING */
   .product-card {
     padding: 20px 10px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .product-card h4 {
