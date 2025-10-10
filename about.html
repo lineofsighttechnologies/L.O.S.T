@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Line Of Sight Technologies</title>
-  <meta name="description" content="Discover the story, mission, and team behind Line Of Sight Technologies — Zimbabwe’s trusted provider of CCTV, networking, and access control solutions." />
+  <meta name="description" content="Discover the story, mission, and team behind Line Of Sight Technologies – Zimbabwe's trusted provider of CCTV, networking, and access control solutions." />
   <meta name="keywords" content="CCTV, networking, access control, security, Zimbabwe, Line Of Sight Technologies, Harare" />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/about.css" />
@@ -41,11 +41,18 @@
           </div>
         </div>
 
-        <ul class="nav-links">
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active-nav">About Us</a></li>
           <li class="dropdown">
-            <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+            <a href="services.html" class="dropdown-toggle">Services <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-content">
               <a href="services.html#cctv">CCTV</a>
               <a href="services.html#ict-support">IT Support & Consulting</a>
@@ -58,7 +65,7 @@
             </div>
           </li>
           <li class="dropdown">
-            <a href="products.html">Product Catalogue &#9662;</a>
+            <a href="products.html" class="dropdown-toggle">Product Catalogue <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-content">
               <a href="products.html#cctv">CCTV & Video Surveillance</a>
               <a href="products.html#end-user-hardware">End-User Hardware & Components</a>
@@ -121,7 +128,7 @@
 		  <div class="about-mv-card">
 			<div class="about-mv-icon"><i class="fas fa-eye"></i></div>
 			<h3>Vision</h3>
-			<p>To be Zimbabwe’s most trusted and leading provider of innovative ICT and integrated security solutions, driving digital transformation and empowering every client's success.</p>
+			<p>To be Zimbabwe's most trusted and leading provider of innovative ICT and integrated security solutions, driving digital transformation and empowering every client's success.</p>
 		  </div>
 		  <div class="about-mv-card">
 			<div class="about-mv-icon"><i class="fas fa-heart"></i></div>
@@ -213,7 +220,7 @@
     <section class="cta-banner">
         <div class="container">
             <h2>Ready to Secure Your Space?</h2>
-            <p>Let’s help you take control with smart, affordable solutions.</p>
+            <p>Let's help you take control with smart, affordable solutions.</p>
             <a href="contact.html" class="btn">Request a Consultation</a>
         </div>
     </section>
